@@ -7,7 +7,7 @@ interface StyledButtonProps {
 
 const StyledButton: React.FC<StyledButtonProps> = ({children}) => {
 
-    const StyledButton = styled("button")(({theme})=> ({
+    const StyledButton = styled("button")(()=> ({
         backgroundColor: "transparent",
         border: "1px solid white",
         borderRadius: "3px",

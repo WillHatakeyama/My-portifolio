@@ -5,6 +5,7 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/StyledButton/AnimatedBackground/AnimatedBackground";
+import theme from "../../../../theme";
 
 const Hero = () => {
 
@@ -12,7 +13,13 @@ const Hero = () => {
         backgroundColor: "black",
         height:"100vh",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        [theme.breakpoints.up("xs")]: {
+            paddingTop: "100px", 
+        },
+        [theme.breakpoints.up("md")]: {
+            paddingTop: "0", 
+        }
     }))
 
     const StyledImg = styled("img")(()=> ({
